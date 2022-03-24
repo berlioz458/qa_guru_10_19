@@ -1,6 +1,7 @@
 package com.demoqa.bookstore.tests;
 
 import com.demoqa.bookstore.base.TestBase;
+import io.qameta.allure.Feature;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
@@ -8,6 +9,7 @@ import static com.demoqa.bookstore.helpers.CustomAllureListener.withCustomTempla
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
+@Feature("Book API")
 public class BookstoreTests extends TestBase {
 
     @Test
